@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://m2.dv8tion.net/releases' }
+}
+
+dependencies {
+    implementation "dev.arbjerg.lavalink:plugin-api:0.1.0"
+    runtimeOnly "com.github.freyacodes.lavalink:LavalinkServer:2bd6b22"
+}
