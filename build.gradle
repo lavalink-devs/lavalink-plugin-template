@@ -21,3 +21,13 @@ dependencies {
     implementation "dev.arbjerg.lavalink:plugin-api:0.3.0"
     runtimeOnly "com.github.freyacodes.lavalink:Lavalink-Server:76684e21110e9caf95a559962a3cca4406e05492"
 }
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            pom {
+                from components.java
+            }
+        }
+    }
+}
