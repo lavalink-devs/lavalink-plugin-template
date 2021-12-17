@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'maven'
 }
 
 group 'org.example'
@@ -18,5 +19,5 @@ repositories {
 
 dependencies {
     implementation "dev.arbjerg.lavalink:plugin-api:0.2.0"
-    implementation "com.github.freyacodes.lavalink:Lavalink-Server:87f9578"
+    compileOnly "com.github.freyacodes.lavalink:Lavalink-Server:8315b0740054b74fc6ad6a6de60c57ba3382e3ea"
 }
