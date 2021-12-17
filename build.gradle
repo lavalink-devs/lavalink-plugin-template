@@ -18,6 +18,6 @@ repositories {
 }
 
 dependencies {
-    implementation "dev.arbjerg.lavalink:plugin-api:0.2.0"
-    compileOnly "com.github.freyacodes.lavalink:Lavalink-Server:8315b0740054b74fc6ad6a6de60c57ba3382e3ea"
+    implementation "dev.arbjerg.lavalink:plugin-api:0.3.0"
+    runtimeOnly "com.github.freyacodes.lavalink:Lavalink-Server:76684e21110e9caf95a559962a3cca4406e05492"
 }
