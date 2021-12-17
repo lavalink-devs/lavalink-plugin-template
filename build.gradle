@@ -1,17 +1,22 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'org.example'
 version '1.0'
+mainClassName = "org.springframework.boot.loader.JarLauncher"
 
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
+
+    // Transitive dependencies
     maven { url 'https://m2.dv8tion.net/releases' }
+    jcenter()
 }
 
 dependencies {
-    implementation "dev.arbjerg.lavalink:plugin-api:0.1.0"
-    runtimeOnly "com.github.freyacodes.lavalink:LavalinkServer:2bd6b22"
+    implementation "dev.arbjerg.lavalink:plugin-api:0.2.0"
+    implementation "com.github.freyacodes.lavalink:Lavalink-Server:87f9578"
 }
