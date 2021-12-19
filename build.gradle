@@ -7,6 +7,8 @@ plugins {
 group 'org.example'
 version '1.0'
 mainClassName = "org.springframework.boot.loader.JarLauncher"
+sourceCompatibility = 11
+compileJava.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
@@ -19,7 +21,7 @@ repositories {
 
 dependencies {
     implementation "dev.arbjerg.lavalink:plugin-api:0.7.0"
-    runtimeOnly "com.github.freyacodes.lavalink:Lavalink-Server:feature~plugins-SNAPSHOT"
+    runtimeOnly "com.github.freyacodes.lavalink:Lavalink-Server:feature~plugins"
 }
 
 publishing {
