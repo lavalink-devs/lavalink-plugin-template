@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class Test implements PluginEventHandler {
     private static final Logger log = LoggerFactory.getLogger(Test.class);
 
-    public void PluginEventHandler() {
+    public Test() {
         log.info("Hello, world!");
     }
 
