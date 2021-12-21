@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class Test implements PluginEventHandler {
+
     private static final Logger log = LoggerFactory.getLogger(Test.class);
 
     public Test() {
@@ -15,7 +16,7 @@ public class Test implements PluginEventHandler {
     }
 
     @Override
-    public void onWebSocketOpen(ISocketContext context) {
+    public void onWebSocketOpen(ISocketContext context, boolean resumed) {
         log.info("Websocket opened!");
     }
 }
