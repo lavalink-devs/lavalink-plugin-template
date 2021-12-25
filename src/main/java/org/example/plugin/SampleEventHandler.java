@@ -7,11 +7,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Test implements PluginEventHandler {
+public class SampleEventHandler implements PluginEventHandler {
 
-    private static final Logger log = LoggerFactory.getLogger(Test.class);
+    private static final Logger log = LoggerFactory.getLogger(SampleEventHandler.class);
 
-    public Test() {
+    public SampleEventHandler() {
         log.info("Hello, world!");
     }
 
