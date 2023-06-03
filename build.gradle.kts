@@ -46,7 +46,7 @@ dependencies {
     compileOnly("com.github.lavalink-devs.Lavalink:plugin-api:3.7.5")
     runtimeOnly("com.github.lavalink-devs:Lavalink:3.7.5")
 
-    compileOnly("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.21")
+    compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.21")
 }
 
 tasks.named<ShadowJar>("shadowJar") {
