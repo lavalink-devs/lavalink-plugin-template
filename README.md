@@ -9,7 +9,7 @@ java, but you can also use kotlin (version `1.8.22`) if you want.
 2. Rename the package `com.example.plugin` to your package name
 3. Rename the class `ExamplePlugin` to your plugin name
 4. Rename the file `ExamplePlugin.java` to your plugin name
-5. fill in the `lavalinkPlugin` in [build.gradle](build.gradle)
+5. fill in the `lavalinkPlugin` in [build.gradle.kts](build.gradle.kts)
 6. Write your plugin
 
 ## How to test your plugin
