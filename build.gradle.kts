@@ -7,7 +7,7 @@ plugins {
 group = "org.example"
 version = "0.1.0"
 
-lavalinkPlugin{
+lavalinkPlugin {
     name = "plugin-template"
     apiVersion = libs.versions.lavalink.api
     serverVersion = gitHash(libs.versions.lavalink.server)
