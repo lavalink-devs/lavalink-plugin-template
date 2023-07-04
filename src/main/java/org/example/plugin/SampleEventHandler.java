@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SampleEventHandler implements PluginEventHandler {
+public class SampleEventHandler extends PluginEventHandler {
 
     private static final Logger log = LoggerFactory.getLogger(SampleEventHandler.class);
 

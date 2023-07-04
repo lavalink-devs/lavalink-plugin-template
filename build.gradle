@@ -1,36 +1,30 @@
 plugins {
     id "java"
-    id "application"
     id "maven-publish"
-    id "com.github.johnrengelman.shadow" version "7.1.0"
+    id "dev.arbjerg.lavalink.gradle-plugin" version "1.0.2"
 }
 
 group "org.example"
 version "0.1.0"
-mainClassName = "org.springframework.boot.loader.JarLauncher"
-sourceCompatibility = 11
+
+lavalinkPlugin{
+    name = "plugin-template"
+    apiVersion = "4.0.0-beta.1"
+    serverVersion = "1c0795bf156fe6559c9c0aed0412bcd8f323a3e0-SNAPSHOT"
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 compileJava.options.encoding = "UTF-8"
 
 repositories {
     mavenCentral()
-    maven { url "https://jitpack.io" }
-
-    // Transitive dependencies
-    maven { url "https://m2.dv8tion.net/releases" }
+    maven { url "https://maven.arbjerg.dev/releases" }
     jcenter()
 }
 
 dependencies {
-    compileOnly "dev.arbjerg.lavalink:plugin-api:3.6.1"
-    // It is recommended to update this version. This commit is from October 17th 2022
-    runtimeOnly "com.github.freyacodes.lavalink:Lavalink-Server:3ead3be0"
-}
-
-shadowJar {
-    def impl = project.configurations.implementation
-    impl.canBeResolved(true)
-    configurations = [impl]
-    archiveClassifier.set("")
+    // add your dependencies here
 }
 
 publishing {
