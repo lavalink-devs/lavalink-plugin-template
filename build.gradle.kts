@@ -10,7 +10,7 @@ version = "0.1.0"
 lavalinkPlugin {
     name = "plugin-template"
     apiVersion = libs.versions.lavalink.api
-    serverVersion = gitHash(libs.versions.lavalink.server)
+    serverVersion = libs.versions.lavalink.server
 }
 
 java {
