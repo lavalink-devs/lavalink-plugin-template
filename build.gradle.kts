@@ -1,6 +1,5 @@
 plugins {
     java
-    `maven-publish`
     alias(libs.plugins.lavalink)
 }
 
