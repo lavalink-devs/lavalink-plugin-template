@@ -28,11 +28,3 @@ tasks {
 dependencies {
     // add your dependencies here
 }
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
-        }
-    }
-}
