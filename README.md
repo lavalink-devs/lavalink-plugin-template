@@ -15,10 +15,10 @@ java, but you can also use kotlin (version `1.8.22`) if you want.
 ## How to test your plugin
 
 1. Place a `application.yml` file in the root directory
-2. Run `./gradlew runLavlaink` (for windows: `./gradlew.bat runLavlaink`) in the root directory
+2. Run `./gradlew runLavalink` (for windows: `./gradlew.bat runLavalink`) in the root directory
 3. The plugin will be loaded
 4. You can now test your plugin
-5. If you change something in the plugin, you can just run `./gradlew runLavlaink` again
+5. If you change something in the plugin, you can just run `./gradlew runLavalink` again
 
 ## How to build your plugin
 
