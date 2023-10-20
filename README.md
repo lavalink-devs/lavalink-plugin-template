@@ -41,5 +41,5 @@ lavalink:
 
 ## How to get help
 
-If you need help, you can join the [Lavalink Discord Server](https://discord.gg/FVqbtGu) and ask in
+If you need help, you can join the [Lavalink Discord Server](https://discord.gg/jttmwHTAad) and ask in
 the `#plugin-development` channel.
