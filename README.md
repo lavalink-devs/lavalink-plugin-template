@@ -14,7 +14,7 @@ java, but you can also use kotlin (version `1.8.22`) if you want.
 
 ## How to test your plugin
 
-1. Place a `application.yml` file in the root directory
+1. Place a `application.yml` file in the root directory (see [here](https://lavalink.dev/configuration/index.html#example-applicationyml) for an example)
 2. Run `./gradlew runLavalink` (for windows: `./gradlew.bat runLavalink`) in the root directory
 3. The plugin will be loaded
 4. You can now test your plugin
@@ -32,14 +32,16 @@ and jitpack will build the plugin for you.
 
 ## How to use your plugin
 
+Go to [jitpack](https://jitpack.io/) and paste the link to your repository. There you can find the version you want to use.
+
 ```yml
 lavalink:
   plugins:
-    - dependency: com.github.lavalink:lavalink-plugin-template:{VERSION} # replace {VERSION} with the version you want to use
+    - dependency: com.github.lavalink:lavalink-plugin-template:{VERSION} # replace {VERSION} with the version you want to use from jitpack
       repository: https://jitpack.io
 ```
 
 ## How to get help
 
 If you need help, you can join the [Lavalink Discord Server](https://discord.gg/jttmwHTAad) and ask in
-the `#plugin-development` channel.
+the `#plugin-dev` channel.

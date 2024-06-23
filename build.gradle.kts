@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.lavalink)
 }
 
-group = "org.example"
+group = "com.example"
 version = "0.1.0"
 
 lavalinkPlugin {
