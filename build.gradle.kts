@@ -1,6 +1,5 @@
 plugins {
     java
-    `maven-publish`
     alias(libs.plugins.lavalink)
 }
 
@@ -27,12 +26,4 @@ tasks {
 
 dependencies {
     // add your dependencies here
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
-        }
-    }
 }
